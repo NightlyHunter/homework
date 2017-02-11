@@ -91,17 +91,17 @@ public class Homework {
             return String.valueOf(maxPositiveDoubleValue);
     }
     public static int modulusIntArray(int a[]){
-        int modulusInt=0;
-        for (int i=0; i<a.length; i++) {
-            modulusInt = a[0] % a[i];
-        }
+//        int modulusInt=0;
+//        for (int i=0; i<a.length; i++) {
+           int modulusInt = a[0] % a[a.length-1];
+//        }
         return modulusInt;
     }
     public static double modulusDoubleArray(double b[]){
-        double modulusDouble=0;
-        for (int i=0; i<b.length; i++) {
-            modulusDouble = b[0] % b[i];
-        }
+//        double modulusDouble=0;
+//        for (int i=0; i<b.length; i++) {
+          double  modulusDouble = b[0] % b[b.length-1];
+//        }
         return modulusDouble;
     }
     public static int secondIntMax(int a[]){
