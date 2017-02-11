@@ -5,11 +5,7 @@ package homework31;
  */
 public class Bird {
     public static String sing(){
-        String firstRow=" I am walking\n";
-        String secondRow=" I am flying\n";
-        String thirdRow=" I am singing\n";
-        String fourthRow=" I am Bird!";
-        String song=firstRow+secondRow+thirdRow+fourthRow;
+        String song=" I am walking\n"+" I am flying\n"+" I am singing\n"+" I am Bird!";
         return song;
     }
 
