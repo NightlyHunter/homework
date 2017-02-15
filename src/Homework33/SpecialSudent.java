@@ -23,13 +23,16 @@ public class SpecialSudent extends CollegeStudent {
         this.email = email;
     }
 
-    public SpecialSudent(String firstName, String lastName, int group, String collegeName, int rating, long id, long secretKey) {
-        super(firstName, lastName, group, collegeName, rating, id);
-        this.secretKey = secretKey;
+    public SpecialSudent(String firstName, String lastName, int group) {
+        super(firstName, lastName, group);
     }
 
-    public SpecialSudent(String lastName, Course[] coursesTaken, String collegeName, int rating, long id, long secretKey) {
-        super(lastName, coursesTaken, collegeName, rating, id);
+    public SpecialSudent(String lastName, Course[] coursesTaken) {
+        super(lastName, coursesTaken);
+    }
+
+    public SpecialSudent(String firstName, String lastName, int group, long secretKey) {
+        super(firstName, lastName, group);
         this.secretKey = secretKey;
     }
 }
