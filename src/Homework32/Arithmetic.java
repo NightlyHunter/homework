@@ -5,9 +5,12 @@ package Homework32;
  */
 public class Arithmetic {
     public static int add(Integer a, Integer b) {
+        int aInt = a;
+        int bInt = b;
         int sum;
-        sum = a + b;
+        sum = aInt + bInt;
         return sum;
     }
+
 }
 
