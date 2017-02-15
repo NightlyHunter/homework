@@ -9,6 +9,7 @@ public class Course {
     private Date startDate;
     private String name;
     private int hoursDuration;
+    private String teacherName;
 
     public void setStartDate(Date startDate) {
         this.startDate = startDate;
@@ -41,8 +42,6 @@ public class Course {
     public String getTeacherName() {
         return teacherName;
     }
-
-    private String teacherName;
 
     public Course(Date startDate, String name) {
         this.startDate = startDate;
