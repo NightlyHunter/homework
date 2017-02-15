@@ -5,10 +5,9 @@ package Homework32;
  */
 public class Adder extends Arithmetic{
     public static boolean chek(Integer a,Integer b){
-        boolean chek=false;
         if (a>=b){
-            chek=true;
+            return true;
         }
-        return chek;
+        return false;
     }
 }
