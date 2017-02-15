@@ -16,12 +16,12 @@ public class Solution {
     Course[] var2={Handmade,KungFu};
     Student DjangoUnchained=new Student("Django","Unchained",15);
     Student DoctorStarnge=new Student ("Starnge",var2);
-    Student Deadpool=new Student("Wilson","Wayde",15);
-    Student Wolwerine=new Student("Hugh","Jackman",4);
+    CollegeStudent Deadpool=new CollegeStudent("Wilson","Wayde",15);
     CollegeStudent BabaJaga=new CollegeStudent("Jaga",var2);
     CollegeStudent DedPechto=new CollegeStudent("Ded","Pechto",13,"Army",666,1000005);
     SpecialSudent Superman=new SpecialSudent("L",var1);
     SpecialSudent Batman=new SpecialSudent("Bruce","Wayne",12,666);
+    SpecialSudent Wolwerine=new SpecialSudent("Hughe","Jackman",15);
 
 
 }
