@@ -10,20 +10,24 @@ public class User {
     private String companyName;
     private int salyry;
     private String currency;
+
     void paySalary(){
         this.balance+=this.salyry;
     }
+
     void withdraw(int sum){
         if (getBalance()<1000){
-            this.balance=(int)(this.balance-sum-(sum*0.05));
+            this.balance=this.balance-sum-(sum/20);
         }else if (getBalance()>=1000){
-            this.balance=(int)(this.balance-sum-(sum*0.1));
+            this.balance=this.balance-sum-(sum/10);
         }
 
     }
+
     int companyNameLength(){
         return this.companyName.length();
     }
+
     void mounthIncreaser(int addMonth){
         this.mounthOfEmployment+=addMonth;
     }
