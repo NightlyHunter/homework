@@ -4,10 +4,16 @@ package Homework4;
  * Created by user on 18.02.2017.
  */
 public class User {
-    USBank Bebe=new USBank(123,"USA",Currency.USD,15,15,1,100);
+    long id;
+    String name;
+    double balance;
+    int monthsOfEmployment;
+    String companyName;
+    int salary;
+    Bank bank;
 
-    public static void main(String[] args) {
-
-        System.out.println (Bebe.getLimitOfWithdrawal());
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

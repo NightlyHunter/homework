@@ -1,13 +1,11 @@
 package Homework4;
 
-import static Homework4.Currency.EUR;
-import static Homework4.Currency.USD;
 
 /**
  * Created by user on 18.02.2017.
  */
 public class USBank extends Bank {
-    private int limitOfWithdrowl;
+
     public USBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
@@ -15,21 +13,34 @@ public class USBank extends Bank {
 
     @Override
     public int getLimitOfWithdrawal() {
-        if (getCurrency().equals(Currency.USD)){
-            limitOfWithdrowl=1000;
-        } else if (getCurrency().equals(Currency.EUR)) {
-            limitOfWithdrowl = 1200;
+        if (getCurrency().equals(Currency.USD)) {
+            return 1000;
         }
-        return limitOfWithdrowl;
+        else if (getCurrency().equals(Currency.EUR)) {
+            return 1200;
+        }
+
+        return 0;
     }
 
     @Override
     int getLimitOfFunding() {
+         if (getCurrency().equals(Currency.EUR)) {
+            return 10000;
+        }
+
         return 0;
     }
 
     @Override
     int getMonthlyRate() {
+        if (getCurrency().equals(Currency.USD)) {
+            return 1/100;
+        }
+        else if (getCurrency().equals(Currency.EUR)) {
+            return 1/50;
+        }
+
         return 0;
     }
 
