@@ -43,6 +43,13 @@ public class ChinaBank extends Bank {
 
     @Override
     int getCommission(int summ) {
+        if (getCurrency().equals(Currency.USD)){
+            if (summ<=1000) return 3/100;
+            else if (summ>1000) return 1/20;
+        }else if (getCurrency().equals(Currency.EUR)){
+            if (summ<=1000) return 1/10;
+            else if (summ>1000) return 11/100;
+        }
         return 0;
     }
 

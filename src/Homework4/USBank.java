@@ -46,6 +46,13 @@ public class USBank extends Bank {
 
     @Override
     int getCommission(int summ) {
+        if (getCurrency().equals(Currency.USD)){
+            if (summ<=1000) return 1/20;
+            else if (summ>1000) return 7/100;
+        }else if (getCurrency().equals(Currency.EUR)){
+            if (summ<=1000) return 3/50;
+            else if (summ>1000) return 2/25;
+        }
         return 0;
     }
 
