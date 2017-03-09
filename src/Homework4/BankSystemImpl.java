@@ -6,7 +6,10 @@ package Homework4;
 public class BankSystemImpl implements BankSystem {
     @Override
     public void withdrawOfUser(User user, int amount) {
+        if (user.getBank().getLimitOfWithdrawal()>=amount){
+            user.setBalance(user.getBalance()-amount+amount*user.getBank().getCommission(amount));
 
+        }else System.out.println("Error!!!");
     }
 
     @Override

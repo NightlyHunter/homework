@@ -4,13 +4,13 @@ package Homework4;
  * Created by user on 18.02.2017.
  */
 public class User {
-    long id;
-    String name;
-    double balance;
-    int monthsOfEmployment;
-    String companyName;
-    int salary;
-    Bank bank;
+    private long id;
+    private String name;
+    private double balance;
+    private int monthsOfEmployment;
+    private String companyName;
+    private int salary;
+    private Bank bank;
 
     public long getId() {
         return id;
