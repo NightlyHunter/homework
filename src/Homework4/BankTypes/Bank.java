@@ -1,5 +1,7 @@
-package Homework4;
+package Homework4.BankTypes;
 
+
+import Homework4.EnumTypes.Currency;
 
 /**
  * Created by user on 18.02.2017.
@@ -79,13 +81,13 @@ public abstract class Bank {
         this.totalCapital = totalCapital;
     }
 
-    abstract int getLimitOfWithdrawal();
+    public abstract int getLimitOfWithdrawal();
 
-    abstract int getLimitOfFunding();
+    public abstract int getLimitOfFunding();
 
-    abstract int getMonthlyRate();
+    public abstract int getMonthlyRate();
 
-    abstract int getCommission(int summ);
+    public abstract int getCommission(int summ);
 
-    abstract double moneyPaidMonthlyForSalary();
+    public abstract double moneyPaidMonthlyForSalary();
 }

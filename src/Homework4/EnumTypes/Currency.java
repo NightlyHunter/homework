@@ -1,4 +1,4 @@
-package Homework4;
+package Homework4.EnumTypes;
 
 /**
  * Created by user on 18.02.2017.

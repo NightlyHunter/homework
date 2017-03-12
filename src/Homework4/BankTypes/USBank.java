@@ -1,5 +1,7 @@
-package Homework4;
+package Homework4.BankTypes;
 
+
+import Homework4.EnumTypes.Currency;
 
 /**
  * Created by user on 18.02.2017.
@@ -20,7 +22,7 @@ public class USBank extends Bank {
     }
 
     @Override
-    int getLimitOfFunding() {
+    public int getLimitOfFunding() {
          if (getCurrency().equals(Currency.EUR)) {
             return 10000;
         }
@@ -29,7 +31,7 @@ public class USBank extends Bank {
     }
 
     @Override
-    int getMonthlyRate() {
+    public int getMonthlyRate() {
         if (getCurrency().equals(Currency.USD)) {
             return 1;
         }
@@ -37,7 +39,7 @@ public class USBank extends Bank {
     }
 
     @Override
-    int getCommission(int summ) {
+    public int getCommission(int summ) {
         if (getCurrency().equals(Currency.USD)){
             if (summ<=1000) return 5;
             else if (summ>1000) return 7;
@@ -49,7 +51,7 @@ public class USBank extends Bank {
     }
 
     @Override
-    double moneyPaidMonthlyForSalary() {
+    public double moneyPaidMonthlyForSalary() {
         return 0;
     }
 }

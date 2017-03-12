@@ -1,11 +1,20 @@
 package Homework4;
 
+import Homework4.BankTypes.Bank;
+import Homework4.BankTypes.ChinaBank;
+import Homework4.BankTypes.EUBank;
+import Homework4.BankTypes.USBank;
+import Homework4.EnumTypes.Currency;
+import Homework4.Interface.BankSystem;
+import Homework4.Interface.BankSystemImpl;
+import Homework4.UserTypes.User;
+
 /**
  * Created by user on 27.02.2017.
  */
 public class Main {
     public static void main(String[] args) {
-        Bank USBank = new USBank(1,"US",Currency.USD,11,1000,12,235468846);
+        Bank USBank = new USBank(1,"US", Currency.USD,11,1000,12,235468846);
         Bank EUBank = new EUBank(2,"Germany",Currency.EUR,200,2000,8,99564852);
         Bank ChinaBank = new ChinaBank(3,"China",Currency.USD,158,1500,4,158444654);
 

@@ -1,4 +1,6 @@
-package Homework4;
+package Homework4.Interface;
+
+import Homework4.UserTypes.User;
 
 /**
  * Created by user on 27.02.2017.

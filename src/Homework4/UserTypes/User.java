@@ -1,4 +1,6 @@
-package Homework4;
+package Homework4.UserTypes;
+
+import Homework4.BankTypes.Bank;
 
 /**
  * Created by user on 18.02.2017.
@@ -81,7 +83,13 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                ", monthsOfEmployment=" + monthsOfEmployment +
+                ", companyName='" + companyName + '\'' +
+                ", salary=" + salary +
+                ", bank=" + bank +
                 '}';
     }
 }
