@@ -13,11 +13,7 @@ public class EUBank extends Bank {
         if (getCurrency().equals(Currency.USD)) {
             return 2000;
         }
-        else if (getCurrency().equals(Currency.EUR)) {
-            return 2200;
-        }
-
-        return 0;
+        else return 2200;
     }
 
     @Override
@@ -25,17 +21,13 @@ public class EUBank extends Bank {
         if (getCurrency().equals(Currency.USD)) {
             return 10000;
         }
-        else if (getCurrency().equals(Currency.EUR)) {
-            return 20000;
-        }
-
-        return 0;
+        else return 20000;
     }
 
     @Override
     int getMonthlyRate() {
         if (getCurrency().equals(Currency.EUR)) {
-            return 1/100;
+            return 1;
         }
 
         return 0;
@@ -44,11 +36,11 @@ public class EUBank extends Bank {
     @Override
     int getCommission(int summ) {
         if (getCurrency().equals(Currency.USD)){
-            if (summ<=1000) return 1/20;
-            else if (summ>1000) return 7/100;
+            if (summ<=1000) return 5;
+            else if (summ>1000) return 7;
         }else if (getCurrency().equals(Currency.EUR)){
-            if (summ<=1000) return 1/50;
-            else if (summ>1000) return 1/25;
+            if (summ<=1000) return 2;
+            else if (summ>1000) return 4;
         }
         return 0;
     }

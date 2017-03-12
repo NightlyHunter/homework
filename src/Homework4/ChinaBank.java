@@ -13,11 +13,7 @@ public class ChinaBank extends Bank {
         if (getCurrency().equals(Currency.USD)) {
         return 100;
     }
-    else if (getCurrency().equals(Currency.EUR)) {
-        return 150;
-    }
-
-        return 0;
+    else return 150;
     }
 
     @Override
@@ -25,17 +21,13 @@ public class ChinaBank extends Bank {
         if (getCurrency().equals(Currency.USD)) {
             return 10000;
         }
-        else if (getCurrency().equals(Currency.EUR)) {
-            return 5000;
-        }
-
-        return 0;
+        else return 5000;
     }
 
     @Override
     int getMonthlyRate() {
     if (getCurrency().equals(Currency.USD)) {
-        return 1/100;
+        return 1;
     }
 
         return 0;
@@ -44,11 +36,11 @@ public class ChinaBank extends Bank {
     @Override
     int getCommission(int summ) {
         if (getCurrency().equals(Currency.USD)){
-            if (summ<=1000) return 3/100;
-            else if (summ>1000) return 1/20;
+            if (summ<=1000) return 3;
+            else if (summ>1000) return 5;
         }else if (getCurrency().equals(Currency.EUR)){
-            if (summ<=1000) return 1/10;
-            else if (summ>1000) return 11/100;
+            if (summ<=1000) return 10;
+            else if (summ>1000) return 11;
         }
         return 0;
     }

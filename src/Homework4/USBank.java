@@ -16,11 +16,7 @@ public class USBank extends Bank {
         if (getCurrency().equals(Currency.USD)) {
             return 1000;
         }
-        else if (getCurrency().equals(Currency.EUR)) {
-            return 1200;
-        }
-
-        return 0;
+        else return 1200;
     }
 
     @Override
@@ -35,23 +31,19 @@ public class USBank extends Bank {
     @Override
     int getMonthlyRate() {
         if (getCurrency().equals(Currency.USD)) {
-            return 1/100;
+            return 1;
         }
-        else if (getCurrency().equals(Currency.EUR)) {
-            return 1/50;
-        }
-
-        return 0;
+        else return 2;
     }
 
     @Override
     int getCommission(int summ) {
         if (getCurrency().equals(Currency.USD)){
-            if (summ<=1000) return 1/20;
-            else if (summ>1000) return 7/100;
+            if (summ<=1000) return 5;
+            else if (summ>1000) return 7;
         }else if (getCurrency().equals(Currency.EUR)){
-            if (summ<=1000) return 3/50;
-            else if (summ>1000) return 2/25;
+            if (summ<=1000) return 6;
+            else if (summ>1000) return 8;
         }
         return 0;
     }

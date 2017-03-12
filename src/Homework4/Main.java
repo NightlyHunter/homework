@@ -5,9 +5,9 @@ package Homework4;
  */
 public class Main {
     public static void main(String[] args) {
-        USBank USBank = new USBank(1,"US",Currency.USD,11,1000,12,235468846);
-        EUBank EUBank = new EUBank(2,"Germany",Currency.EUR,200,2000,8,99564852);
-        ChinaBank ChinaBank = new ChinaBank(3,"China",Currency.USD,158,1500,4,158444654);
+        Bank USBank = new USBank(1,"US",Currency.USD,11,1000,12,235468846);
+        Bank EUBank = new EUBank(2,"Germany",Currency.EUR,200,2000,8,99564852);
+        Bank ChinaBank = new ChinaBank(3,"China",Currency.USD,158,1500,4,158444654);
 
         User userUS1 = new User(1,"Vasya",1500,3,"Kobasnyi zavod",500,USBank);
         User userUS2 = new User(2,"Petya",1254,1,"USBank",1000, USBank);
@@ -18,7 +18,7 @@ public class Main {
         User userCH1 = new User(5,"Olya",4125,2,"Error",258,ChinaBank);
         User userCH2 = new User(6,"Sasha",123.5,1,"SMTh",12,ChinaBank);
 
-        BankSystemImpl BSI = new BankSystemImpl();
+        BankSystem BSI = new BankSystemImpl();
 
         System.out.println("Vasya");
         BSI.withdrawOfUser(userUS1,12);
